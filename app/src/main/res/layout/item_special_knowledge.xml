@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@id/ll_special_knowledge"
+              android:layout_width="fill_parent" android:layout_height="wrap_content"
+              android:gravity="center_horizontal" android:orientation="vertical"
+              android:paddingBottom="@dimen/fifty_five_dp">
+    <ImageView android:id="@id/iv_special_knowledge_img" android:layout_width="fill_parent"
+               android:layout_height="280.0dip" android:contentDescription="@string/IMAGE"
+               android:scaleType="centerCrop"/>
+    <TextView android:id="@id/tv_special_knowledge_qa" android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:layout_marginTop="@dimen/twenty_five_dp"
+              android:includeFontPadding="false"
+              android:text="QA"
+              android:textColor="@color/text_black" android:textSize="@dimen/fifteen_sp"/>
+    <View android:layout_width="@dimen/twenty_dp" android:layout_height="@dimen/two_dp"
+          android:layout_marginTop="@dimen/ten_dp" android:background="@color/main_color"/>
+    <TextView android:id="@id/tv_special_knowledge_name" android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:layout_marginTop="@dimen/ten_dp"
+              android:includeFontPadding="false" android:lineSpacingMultiplier="1.2"
+              android:paddingLeft="@dimen/ten_dp" android:paddingRight="@dimen/ten_dp"
+              android:textColor="@color/text_black" android:textSize="@dimen/fifteen_sp"/>
+    <TextView android:id="@id/tv_special_knowledge_subtitle" android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:layout_marginTop="@dimen/eight_dp"
+              android:includeFontPadding="false" android:lineSpacingMultiplier="1.2"
+              android:paddingLeft="@dimen/ten_dp" android:paddingRight="@dimen/ten_dp"
+              android:textColor="@color/text_gray" android:textSize="@dimen/thirteen_sp"/>
+</LinearLayout>

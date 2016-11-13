@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_gd_price"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/twenty_dp"
+    android:layout_marginRight="@dimen/twenty_dp"
+    android:layout_marginTop="@dimen/ten_dp">
+
+    <TextView
+        android:id="@+id/tv_gd_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red_d4"
+        android:textSize="@dimen/fifteen_sp"/>
+
+    <TextView
+        android:id="@+id/tv_gd_full_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_gd_price"
+        android:layout_marginLeft="@dimen/fifteen_dp"
+        android:layout_toRightOf="@id/tv_gd_price"
+        android:includeFontPadding="false"
+        android:textColor="@color/gray_light_ce"
+        android:textSize="@dimen/twelve_sp"/>
+
+    <TextView
+        android:id="@+id/tv_gd_sold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_gd_price"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/gray_aa"
+        android:textSize="@dimen/eleven_sp"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/tv_gd_price"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:background="@color/gray_d4"/>
+</RelativeLayout>

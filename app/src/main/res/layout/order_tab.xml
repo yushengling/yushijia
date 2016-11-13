@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:padding="10dp"
+              android:weightSum="5">
+
+    <TextView
+        android:id="@+id/wait_pay"
+        android:clickable="true"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/ic_pending_payment"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:textSize="10sp"
+        android:text="待付款"/>
+
+    <TextView
+        android:id="@+id/wait_transmit"
+        android:clickable="true"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/ic_pending_delivery"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:textSize="10sp"
+        android:text="待发货"/>
+
+    <TextView
+        android:id="@+id/wait_receive"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/ic_pending_receiving"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:textSize="10sp"
+        android:text="待收货"/>
+
+    <TextView
+        android:id="@+id/wait_comment"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/ic_pending_evaluate"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:textSize="10sp"
+        android:text="待评价"/>
+
+    <TextView
+        android:id="@+id/refund"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/ic_refund"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:textSize="10sp"
+        android:text="退货"/>
+</LinearLayout>

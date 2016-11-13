@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">YueShiJia</string>
+    <string name="IMAGE">This is a picture.</string>
+
+    <!--专题界面  tab-->
+    <string-array name="club_title">
+        <item>视频</item>
+        <item>榜单</item>
+        <item>知识</item>
+        <item>人文</item>
+        <item>地图</item>
+        <item>活动</item>
+    </string-array>
+    <!--订单详情界面  tab-->
+    <string-array name="order_detail_title">
+        <item>全部</item>
+        <item>待付款</item>
+        <item>待发货</item>
+        <item>待收货</item>
+        <item>待评价</item>
+    </string-array>
+    <string name="into_the_shopping_basket">加入购物篮</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="collection">收藏</string>
+    <string name="buy_now">立即购买</string>
+    <string name="shop">店铺</string>
+    <string name="shopping_basket">购物篮</string>
+</resources>

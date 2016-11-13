@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="#000"
+                android:orientation="vertical">
+
+
+
+    <FrameLayout
+        android:id="@+id/view_bottom_f"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <io.vov.vitamio.widget.VideoView
+            android:id="@+id/view_video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+        <ProgressBar
+            android:id="@+id/view_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="false"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/view_top_f"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/view_iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/view_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/start_video_df"
+            android:textColor="#fff"/>
+    </FrameLayout>
+
+</RelativeLayout>

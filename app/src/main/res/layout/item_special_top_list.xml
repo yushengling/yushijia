@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@id/rl_top_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/fifty_dp"
+                android:paddingTop="@dimen/five_dp">
+    <ImageView android:id="@id/iv_top_list_img"
+               android:layout_width="fill_parent"
+               android:layout_height="383.0dip"
+               android:layout_marginLeft="88.0dip"
+               android:scaleType="centerCrop"/>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/twenty_dp"
+                  android:layout_marginTop="@dimen/twenty_dp"
+                  android:background="@drawable/shape_rect_white_stroke_main_bg"
+                  android:minWidth="130.0dip"
+                  android:orientation="vertical"
+                  android:paddingLeft="@dimen/eight_dp">
+        <TextView android:id="@id/tv_top_list_label"
+                  style="@style/tv_color28_size28"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/fifteen_dp"
+                  android:maxLength="8"
+                  android:text="slslsl"/>
+        <TextView android:id="@id/tv_top_list_num"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="@dimen/ten_dp"
+                  android:layout_marginTop="@dimen/seven_dp"
+                  android:includeFontPadding="false"
+                  android:text="slsl" android:textColor="@color/main_color"
+                  android:textSize="@dimen/twelve_sp"/>
+    </LinearLayout>
+    <TextView android:id="@id/tv_top_list_name"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@id/iv_top_list_img"
+              android:layout_below="@id/iv_top_list_img"
+              android:layout_marginTop="@dimen/fifteen_dp"
+              android:includeFontPadding="false"
+              android:lineSpacingMultiplier="1.2"
+              android:textColor="@color/gray_dark_80"
+              android:textSize="@dimen/twelve_sp"/>
+    <TextView android:id="@id/tv_top_list_origin"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@id/tv_top_list_name"
+              android:layout_below="@id/tv_top_list_name"
+              android:layout_marginTop="@dimen/eight_dp"
+              android:includeFontPadding="false"
+              android:textColor="@color/text_gray"
+              android:textSize="@dimen/ten_sp"/>
+</RelativeLayout>

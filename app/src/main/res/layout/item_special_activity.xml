@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@id/rl_special_activity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+    <ImageView android:id="@id/iv_special_activity_img"
+               android:layout_width="fill_parent"
+               android:layout_height="@dimen/one_hundred_and_sixty_eight_dp"
+               android:contentDescription="@string/IMAGE"
+               android:scaleType="centerCrop"/>
+    <LinearLayout android:id="@id/ll_special_activity"
+                  android:layout_width="wrap_content"
+                  android:layout_height="100dp"
+                  android:layout_centerInParent="true"
+                  android:layout_marginLeft="60dp"
+                  android:layout_marginRight="60dp"
+                  android:background="@drawable/ic_activity_title_bg"
+                  android:gravity="center_horizontal"
+                  android:minWidth="@dimen/two_hundred_and_eleven_db"
+                  android:orientation="vertical">
+        <TextView android:id="@id/tv_special_activity_time"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/twelve_dp"
+                  android:textColor="@color/main_color"
+
+                  android:textSize="@dimen/twelve_sp"
+                  android:textStyle="bold"/>
+        <TextView android:id="@id/tv_special_activity_title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/thirteen_dp"
+                  android:layout_marginRight="@dimen/twelve_dp"
+                  android:layout_marginTop="@dimen/five_dp"
+                  android:lines="1"
+                  android:textColor="@color/text_black"
+                  android:textSize="@dimen/sixteen_sp"/>
+        <TextView android:id="@id/tv_special_activity_desc"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="@dimen/thirteen_dp"
+                  android:layout_marginTop="@dimen/seven_dp"
+                  android:textColor="@color/main_color"
+                  android:textSize="@dimen/ten_sp"/>
+    </LinearLayout>
+</RelativeLayout>

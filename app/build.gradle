@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+    defaultConfig {
+        applicationId "com.example.winner.yueshijia"
+        minSdkVersion 18
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    testCompile 'junit:junit:4.12'
+    //依赖FragmentTabHost
+    compile project(':library')
+    //volley
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile project(':xListView')
+    compile files('libs/eventbus-3.0.0.jar')
+    //recycleView
+    compile 'com.android.support:cardview-v7:21.0.3'
+    compile 'com.android.support:recyclerview-v7:21.0.3'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile project(':jcvideoplayer-lib')
+    compile files('libs/MobCommons-2016.1107.1809.jar')
+    compile files('libs/MobTools-2016.1107.1809.jar')
+    compile files('libs/ShareSDK-Core-2.7.10.jar')
+    compile files('libs/ShareSDK-QZone-2.7.10.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.7.10.jar')
+    compile files('libs/ShareSDK-Wechat-2.7.10.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.7.10.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.7.10.jar')
+}

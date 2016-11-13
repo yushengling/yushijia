@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@android:style/Theme.Dialog"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/shape_dialog_exit_bg"
+                android:fadingEdge="none"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+    <LinearLayout android:id="@+id/ll_title_content"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+
+                  android:layout_alignParentLeft="true"
+                  android:layout_alignRight="@+id/view"
+                  android:gravity="center"
+                  android:orientation="vertical">
+        <TextView android:id="@+id/tv_dialog_title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="15.0dip"
+                  android:gravity="center"
+                  android:text=""
+                  android:textColor="#99000000"
+                  android:textSize="14.0sp"/>
+    </LinearLayout>
+    <View android:id="@+id/view"
+          android:layout_width="260.0dip"
+          android:layout_height="0.5dip"
+          android:layout_below="@+id/ll_title_content"
+          android:layout_marginTop="20.0dip"
+          android:background="#ffd2d2d2"/>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/view">
+        <Button android:id="@+id/bt_dialog_enter"
+                android:layout_width="130.0dip"
+                android:layout_height="44.0dip"
+                android:background="@drawable/selector_dialog_back_btn_bg_l"
+                android:text=""
+                android:textColor="#99000000"
+                android:textSize="15.0sp"/>
+        <View android:layout_width="0.5dip"
+              android:layout_height="44.0dip"
+              android:background="#ffd2d2d2"/>
+        <Button android:id="@+id/bt_dialog_cancel"
+                android:layout_width="130.0dip"
+                android:layout_height="44.0dip"
+                android:background="@drawable/selector_dialog_back_btn_bg_r"
+                android:text=""
+                android:textColor="#99000000"
+                android:textSize="15.0sp"/>
+    </LinearLayout>
+</RelativeLayout>

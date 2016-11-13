@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <!--<com.example.winner.yueshijia.views.CustomVideo
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"/>-->
+    <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"/>
+
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="20dp"
+        android:background="#D6B585"/>
+
+    <TextView
+        android:id="@+id/top_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="炉灶间的五星上将"
+        android:textColor="#000"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/bottom_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="45dp"
+        android:text="我负责厨房  你负责赞扬"
+        android:textColor="#868080"
+        android:textSize="15sp"/>
+</LinearLayout>

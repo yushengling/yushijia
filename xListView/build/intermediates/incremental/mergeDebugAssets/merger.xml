@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\yueshijia\xListView\src\main\assets"/><source path="E:\yueshijia\xListView\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\yueshijia\xListView\src\debug\assets"/></dataSet></merger>

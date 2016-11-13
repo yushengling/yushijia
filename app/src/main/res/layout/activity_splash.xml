@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+    <ImageView android:id="@+id/iv_splash"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:contentDescription="@string/IMAGE"
+               android:scaleType="centerCrop"
+               android:src="@drawable/ic_splash"/>
+    <ImageView android:id="@+id/iv_splash_advert"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:contentDescription="@string/IMAGE"
+               android:scaleType="centerCrop"
+               android:visibility="gone"/>
+    <Button android:id="@+id/bt_jump"
+            android:layout_width="50.0dip"
+            android:layout_height="25.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="48.0dip"
+            android:background="@drawable/shape_round_splash_bg_p"
+            android:text="跳过"
+            android:textColor="@android:color/white" android:textSize="15.0sp"
+            android:visibility="visible"/>
+</RelativeLayout>

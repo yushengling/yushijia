@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@id/ll_special_humanity"
+              android:layout_width="fill_parent" android:layout_height="wrap_content"
+              android:gravity="center_horizontal" android:orientation="vertical"
+              android:paddingBottom="@dimen/fifty_five_dp">
+    <ImageView android:id="@id/iv_humanity_img" android:layout_width="fill_parent"
+               android:layout_height="495.0dip" android:contentDescription="@string/IMAGE"
+               android:scaleType="centerCrop"/>
+    <View android:layout_width="@dimen/twenty_dp" android:layout_height="@dimen/two_dp"
+          android:layout_marginTop="@dimen/fifteen_dp" android:background="@color/main_color"/>
+    <TextView android:id="@id/tv_humanity_name" android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:layout_marginTop="@dimen/ten_dp"
+              android:includeFontPadding="false" android:lineSpacingMultiplier="1.2"
+              android:paddingLeft="@dimen/ten_dp" android:paddingRight="@dimen/ten_dp"
+              android:textColor="@color/text_black" android:textSize="@dimen/fifteen_sp"/>
+    <TextView android:id="@id/tv_humanity_subtitle" android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:layout_marginTop="@dimen/eight_dp"
+              android:includeFontPadding="false" android:lineSpacingMultiplier="1.2"
+              android:paddingLeft="@dimen/ten_dp" android:paddingRight="@dimen/ten_dp"
+              android:textColor="@color/text_gray" android:textSize="@dimen/twelve_sp"/>
+</LinearLayout>

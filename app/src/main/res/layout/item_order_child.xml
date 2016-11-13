@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/icon_product_siv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/product_des_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/icon_product_siv"
+        android:layout_toRightOf="@id/icon_product_siv"
+        android:paddingLeft="10dp"
+        android:text="水果干组合(内含水果调味料)"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/product_price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/icon_product_siv"
+        android:layout_toRightOf="@id/icon_product_siv"
+        android:paddingLeft="10dp"
+        android:text="¥ 100.00"
+        android:textColor="#efa423"/>
+
+    <TextView
+        android:id="@+id/product_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/icon_product_siv"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:text="x1"
+        android:textColor="#efa423"/>
+
+    <RelativeLayout
+        android:id="@+id/child_bottom_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/icon_product_siv"
+        android:padding="8dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/total_pro_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总共5件商品"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合计:"/>
+
+            <TextView
+                android:id="@+id/total_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:text="¥100.00"
+                android:textColor="#efa423"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(含运费0.00)"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cancel_order_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/total_pro_tv"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_bg"
+            android:clickable="true"
+            android:text="取消订单"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

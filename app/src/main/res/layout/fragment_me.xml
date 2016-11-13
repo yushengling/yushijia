@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:background="@color/statue_bar"
+        android:layout_height="0dp"/>
+    <com.example.winner.yueshijia.views.HeadZoomScrollView
+        android:layout_below="@id/status_bar"
+        android:id="@+id/hzsv_me"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_me_bg"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/ic_me_bg"/>
+
+            <LinearLayout
+                android:id="@+id/ll_outer_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/ic_not_logged"
+                    app:civ_border_color="#FFffffff"
+                    app:civ_border_width="2dp"/>
+
+                <TextView
+                    android:id="@+id/tv_me_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="用户名"
+                    android:textColor="#bbffffff"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_me_bg"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="我的订单"
+                        android:textColor="#b000"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/me_order_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/btn_right"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:text="查看全部"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="12sp"/>
+                </RelativeLayout>
+
+                <include layout="@layout/divide_line"/>
+
+                <include layout="@layout/order_tab"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="我的账户"
+                    android:textColor="#b000"
+                    android:textSize="14sp"/>
+
+                <include layout="@layout/divide_line"/>
+
+                <include layout="@layout/me_user_view"/>
+
+                <include layout="@layout/divide_line"/>
+
+                <RelativeLayout
+                    android:id="@+id/favorite_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="我的收藏"
+                        android:textColor="#b000"
+                        android:textSize="14sp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="10dp"
+                        android:src="@drawable/btn_right"/>
+                </RelativeLayout>
+
+                <include layout="@layout/divide_line"/>
+
+                <RelativeLayout
+                    android:id="@+id/me_event_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="我的活动"
+                        android:textColor="#b000"
+                        android:textSize="14sp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="10dp"
+                        android:src="@drawable/btn_right"/>
+                </RelativeLayout>
+
+                <include layout="@layout/divide_line"/>
+
+                <RelativeLayout
+                    android:id="@+id/call_frends_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="邀请好友"
+                        android:textColor="#b000"
+                        android:textSize="14sp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="10dp"
+                        android:src="@drawable/btn_right"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </com.example.winner.yueshijia.views.HeadZoomScrollView>
+
+    <ImageView
+        android:id="@+id/setting_iv"
+        android:layout_below="@id/status_bar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="13dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_setting"/>
+</RelativeLayout>
